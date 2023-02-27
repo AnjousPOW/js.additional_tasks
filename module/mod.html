@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модуль</title>
+</head>
+<body>
+    <script type="module">
+        import {sterRegist, sterProb, number_of_words, unique_words} from './sayHi.js';
+
+        document.body.innerHTML = sterRegist('aBscD');
+        document.body.innerHTML = sterProb('Вот пример строки,в которой     используются знаки препинания.После знаков должны стоять пробелы , а перед знаками их быть не должно .    Если есть лишние подряд идущие пробелы, они должны быть устранены.'); 
+        document.body.innerHTML = number_of_words('Нанейронил Георгий Иванов');
+        document.body.innerHTML = unique_words('Текст, в котором слово текст несколько раз встречается и слово тоже')           
+    </script>
+</body>
+</html>
